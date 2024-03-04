@@ -1,7 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css"> 
+    <title>Document</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="box">
+        <p>Anna kolme numeroa ja paina nappia</p>
+        <input type="number" id="sortone">
+        <input type="number" id="sorttwo">
+        <input type="number" id="sortthree">
+        <button onclick="sort()">Järjestä numerot</button>
+        <div id="sortResults"></div>
+    </div>
+    <div class="box">
+        <p>Anna viisi numeroa ja paina nappia</p>
+        <input type="number" id="input1">
+        <input type="number" id="input2">
+        <input type="number" id="input3">
+        <input type="number" id="input4">
+        <input type="number" id="input5">
+        <button onclick="getLargestNumber()">Get Largest Number</button>
+        <div id="largestNumber"></div>
+    </div>
+    <div class="box">
+        <p>Onko numero jaollinen</p>
+        <input type="number" id="numberInput">
+        <button onclick="checkEvenOrOdd()">检查偶数或奇数</button>
+        <div id="evenOrOdd"></div>
+    </div>
+    <div class="box">
+        <p>Ikä luokittelija</p>
+        <p>Anna ikäsi</p>
+        <input type="number" id="age" placeholder="Enter your age">
+        <button type="button" onclick="classAge()">Classify</button>
+        <div id="ageClass"></div>
+    </div>
+    <div class="box">
+        <p>Hello, World! eri kielillä</p>
+        <select id="languageSelect">
+            <option value="english">English</option>
+            <option value="finnish">Finnish</option>
+            <option value="chinese">Chinese</option>
+        </select>
+        <button onclick="sayHello()">Say Hello</button>
+        <div id="helloWorld"></div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
